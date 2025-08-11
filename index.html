@@ -1,63 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Pamal - Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+  </style>
 </head>
+
 <body>
 <header>
-  <div class="logo">
-    <img src="your-photo.jpg" alt="My Photo" class="profile-pic">
-    <h1>Your Name</h1>
+  <a href="#" class="logo">Pamal</a>
+  <div class="menu-icon" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
   </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#qualifications">Qualifications</a>
+  <nav id="navbar">
+    <a href="#home" class="active">Home</a>
+    <a href="#services">Services</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
     <a href="#contact">Contact</a>
-    <button id="theme-toggle">🌙</button>
   </nav>
 </header>
 
-<main>
-  <section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <p>This is the home section where you introduce yourself.</p>
-  </section>
+<section class="home" id="home">
+  <div class="home-content">
+    <h1>Hi, I'm <span>Pamal</span></h1>
+    <h3 class="typing-text">I'm a <span></span></h3>
+    <p>Passionate developer with expertise in creating innovative web solutions and mobile applications. I love turning ideas into reality through clean, efficient code and stunning user experiences.</p>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/pamal" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/pamal" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://twitter.com/pamal" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="https://instagram.com/pamal" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+  <div class="home-img">
+    <img src="https://via.placeholder.com/400x400/1DB954/FFFFFF?text=Pamal" alt="Pamal">
+  </div>
+</section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write about yourself here. Include your background, skills, and passions.</p>
-  </section>
+<section class="services" id="services">
+  <h2 class="section-title">My Services</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <i class="fas fa-code"></i>
+      <h3>Web Development</h3>
+      <p>Creating responsive, modern websites using the latest technologies like React, Vue.js, and Node.js to deliver exceptional user experiences.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-mobile-alt"></i>
+      <h3>Mobile App Development</h3>
+      <p>Building native and cross-platform mobile applications for iOS and Android using React Native and Flutter frameworks.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-paint-brush"></i>
+      <h3>UI/UX Design</h3>
+      <p>Designing intuitive and visually appealing user interfaces with a focus on user experience and modern design principles.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-server"></i>
+      <h3>Backend Development</h3>
+      <p>Developing robust server-side applications and APIs using technologies like Node.js, Python, and database management systems.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-cloud"></i>
+      <h3>Cloud Solutions</h3>
+      <p>Implementing scalable cloud infrastructure and deployment solutions using AWS, Google Cloud, and Docker containers.</p>
+    </div>
+    <div class="service-card">
+      <i class="fas fa-chart-line"></i>
+      <h3>SEO Optimization</h3>
+      <p>Optimizing websites for search engines and improving performance to increase visibility and user engagement.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="qualifications">
-    <h2>Qualifications</h2>
-    <ul>
-      <li>Degree or Certification 1</li>
-      <li>Degree or Certification 2</li>
-      <li>Relevant Experience</li>
-    </ul>
-  </section>
+<section class="skills" id="skills">
+  <h2 class="section-title">My Skills</h2>
+  <div class="skills-container">
+    <div class="skill-item">
+      <h3>JavaScript</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="95"></div>
+      </div>
+      <span>95%</span>
+    </div>
+    <div class="skill-item">
+      <h3>React.js</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="90"></div>
+      </div>
+      <span>90%</span>
+    </div>
+    <div class="skill-item">
+      <h3>Node.js</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="85"></div>
+      </div>
+      <span>85%</span>
+    </div>
+    <div class="skill-item">
+      <h3>Python</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="88"></div>
+      </div>
+      <span>88%</span>
+    </div>
+    <div class="skill-item">
+      <h3>HTML/CSS</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="98"></div>
+      </div>
+      <span>98%</span>
+    </div>
+    <div class="skill-item">
+      <h3>MongoDB</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="80"></div>
+      </div>
+      <span>80%</span>
+    </div>
+    <div class="skill-item">
+      <h3>Vue.js</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="82"></div>
+      </div>
+      <span>82%</span>
+    </div>
+    <div class="skill-item">
+      <h3>Docker</h3>
+      <div class="skill-progress">
+        <div class="progress-bar" data-width="75"></div>
+      </div>
+      <span>75%</span>
+    </div>
+  </div>
+</section>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>Phone: +123 456 7890</p>
-  </section>
-</main>
+<section class="education" id="education">
+  <h2 class="section-title">Education</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Bachelor of Computer Science</h3>
+      <h4>University of Technology - 2018-2022</h4>
+      <p>Graduated with First Class Honors. Specialized in Software Engineering and Web Technologies. Active member of the Computer Science Society and participated in multiple hackathons.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Full Stack Web Development Certification</h3>
+      <h4>FreeCodeCamp - 2021</h4>
+      <p>Completed comprehensive certification covering HTML5, CSS3, JavaScript, React, Node.js, and MongoDB. Built 5 real-world projects demonstrating proficiency in full-stack development.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>Advanced JavaScript Certification</h3>
+      <h4>Udemy - 2020</h4>
+      <p>Deep dive into modern JavaScript concepts including ES6+, async/await, closures, and advanced DOM manipulation. Completed with 98% score.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>UI/UX Design Bootcamp</h3>
+      <h4>Google UX Design Certificate - 2019</h4>
+      <p>Learned user-centered design principles, wireframing, prototyping, and usability testing. Completed capstone project designing a mobile app from concept to high-fidelity prototype.</p>
+    </div>
+  </div>
+</section>
 
-<footer>
-  <p>© 2025 Your Name. All rights reserved.</p>
-</footer>
+<section class="experience" id="experience">
+  <h2 class="section-title">Work Experience</h2>
+  <div class="experience-container">
+    <div class="experience-item">
+      <h3>Senior Full Stack Developer</h3>
+      <h4>TechCorp Solutions (2022 - Present)</h4>
+      <p>Leading development of enterprise web applications using React, Node.js, and PostgreSQL. Mentoring junior developers and implementing agile development practices. Successfully delivered 8+ projects ahead of schedule.</p>
+      <ul>
+        <li>Improved application performance by 40% through code optimization</li>
+        <li>Led team of 5 developers in building scalable microservices architecture</li>
+        <li>Implemented CI/CD pipelines reducing deployment time by 60%</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Frontend Developer</h3>
+      <h4>Digital Innovations Inc. (2021 - 2022)</h4>
+      <p>Developed responsive web applications using React and Vue.js. Collaborated with UX designers to implement pixel-perfect designs and enhance user experience across multiple platforms.</p>
+      <ul>
+        <li>Built 15+ responsive websites with 99% cross-browser compatibility</li>
+        <li>Reduced page load times by 50% through optimization techniques</li>
+        <li>Integrated RESTful APIs and third-party services</li>
+      </ul>
+    </div>
+    <div class="experience-item">
+      <h3>Web Developer Intern</h3>
+      <h4>StartupLab (2020 - 2021)</h4>
+      <p>Assisted in developing company website and internal tools. Gained hands-on experience with modern web technologies and agile development methodologies.</p>
+      <ul>
+        <li>Contributed to 3 major product releases</li>
+        <li>Fixed 100+ bugs and implemented new features</li>
+        <li>Learned version control and collaborative development practices</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-<script>
-  // Dark mode toggle
-  const toggleBtn = document.getElementById('theme-toggle');
-  toggleBtn.addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-  });
+<section class="contact" id="contact">
+  <h2 class="section-title">Contact Me</h2>
+  <div class="contact-container">
+    <div class="contact-info">
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          <h4>Address</h4>
+          <p>Negombo, Western Province, Sri Lanka</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <div>
+          <h4>Phone</h4>
+          <p>+94 77 123 4567</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          <h4>Email</h4>
+          <p>pamal@developer.com</p>
+        </div>
+      </div>
+      <div class="contact-item">
+        <i class="fab fa-github"></i>
+        <div>
+          <h4>GitHub</h4>
+          <p><a href="https://github.com/pamal" target="_blank" style="color: #1DB954;">github.com/pamal</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-form">
+      <form>
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <input type="text" placeholder="Subject" required>
+        </div>
+        <div class="form-group">
+          <textarea placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<script src="main.js">
+
 </script>
 </body>
 </html>
