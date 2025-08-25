@@ -60,6 +60,14 @@ header {
   color: #1ED760;
 }
 
+.bg_img{
+  background-image: url("pictures/Amazing-HD-Black-Wallpapers.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 /* Home */
 .home {
   height: 100vh;
@@ -91,6 +99,11 @@ header {
   background: #1ED760;
 }
 
+.catch{
+  color: #1ED760;
+  font-size: 4rem;
+}
+
 /* Sections */
 section {
   padding: 80px 10%;
@@ -103,15 +116,28 @@ section {
 }
 
 .heading span {
-  color: #9b59b6;
+  color: #1ED760;
+}
+.about p{
+  font-size: 2rem;
 }
 
 /* Skills */
 .skills-container {
+  align-items: center;
   display: flex;
-  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.skills-container li {
+  list-style: none;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .skill {
