@@ -21,9 +21,8 @@
       theme: {
         extend: {
           colors: {
-            matt:"#28282B",
-            vividBlue:"#1E90FF",
-            vividOrange:"#FF6B00",
+              darkchar:"#101820",
+              briyellow:"#FEE715",
           },
           fontFamily: {
             lato: ["Lato", "sans-serif"],
@@ -34,7 +33,7 @@
   </script>
 </head>
 
-<body class="dark:bg-matt text-gray-200 font-lato flex min-h-screen">
+<body class="bg-darkchar text-gray-200 font-lato flex min-h-screen">
 
 <!-- Sidebar / Navbar -->
 <aside class="w-72 bg-gray-900 flex flex-col items-center py-8 space-y-6 fixed inset-y-0 left-0 shadow-lg z-30 hidden md:flex">
@@ -42,6 +41,7 @@
   <img src="/assets/img/pro-pic.jpg" alt="Profile"
        class="rounded-full border-4 border-gray-700 w-28 h-28 object-cover transition-transform duration-500 hover:scale-110" />
   <h1 class="text-xl font-bold text-white">Pamal Pahasara</h1>
+
 
 
 
@@ -81,16 +81,28 @@
 
   <!-- Home Section -->
   <section id="home" class="bg-center bg-cover min-h-screen flex items-center px-6 sm:px-12 md:px-20 transition-opacity duration-700">
-    <div class="max-w-3xl">
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-3">Pamal Pahasara</h1>
-        <p class="text-green-500 text-2xl font-bold typing-animation">CODE DEBUG REPEAT...</p>
+    <div class="max-w-3xl flex-grow">
+        <h1 class="flex text-4xl sm:text-5xl font-extrabold text-white mb-3 mx-8">Pamal Pahasara</h1>
+
+        <div class="Hcard flex mx-5">
+            <div class="Hloader">
+                <p>Always Remember To</p>
+                <div class="Hwords">
+                    <span class="Hword">CODE</span>
+                    <span class="Hword">DEBUG</span>
+                    <span class="Hword">REPEAT</span>
+                </div>
+            </div>
+        </div>
+
+
     </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="flex flex-col md:flex-row px-6 sm:px-12 md:px-20 py-12 gap-12 transition-opacity duration-700">
     <div class="max-w-2xl text-gray-300">
-      <h2 class="text-2xl font-bold mb-6 text-vividBlue">UI/UX Designer & Web Developer.</h2>
+      <h2 class="text-2xl font-bold mb-6 text-briyellow animate-slideInLeft [animation-delay:0.2s]">UI/UX Designer & Web Developer.</h2>
       <div class="flex flex-col sm:flex-row gap-12 mb-8">
         <ul class="space-y-5 border-b sm:border-b-0 sm:border-r border-gray-700 pb-4 sm:pb-0 sm:pr-8">
           <li><strong>Birthday:</strong> 2003 March 29</li>
@@ -108,9 +120,13 @@
 
   <!-- Projects -->
   <section id="projects" class="px-6 sm:px-12 md:px-20 py-12">
-    <h2 class="text-3xl font-bold text-vividBlue mb-6">My Projects</h2>
+    <h2 class="text-3xl font-bold text-briyellow mb-6">My Projects</h2>
     <p class="max-w text-gray-300">Coming soon...</p>
   </section>
+
+
+    <object data="myProjects.html" width="100%" height="500px"></object>
+<!--  contact  -->
 
   <div
           class="max-w-md mx-auto relative overflow-hidden z-10 bg-stone-900 p-8"
@@ -154,7 +170,7 @@
 
       <div class="flex justify-end">
         <button
-                class="bg-gradient-to-r from-orange-500 via-vividOrange to-orange-500 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
+                class=" bg-gradient-to-r from-purple-600 to-purple-700 text-white px-4 py-2 font-bold rounded-md hover:opacity-80"
                 type="submit"
         >
           Send Message

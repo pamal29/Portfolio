@@ -1,3 +1,51 @@
+
+/*projects heading*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* button styling */
+.proj-button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #FEE715;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+}
+
+/* this is the text, when you hover on button */
+.proj-hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+/* hover */
+.proj-button:hover .proj-hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+}
+
+
+
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
     50% { transform: translateY(-10px); }
@@ -33,7 +81,7 @@
 .project-card:nth-child(3) { animation-delay: 0.3s; }
 
 .gradient-border {
-    background: linear-gradient(45deg, #9333ea, #000000, #9333ea);
+    background: linear-gradient(45deg, #FEE715, #000000, #FEE715);
     background-size: 200% 200%;
     animation: gradient-shift 3s ease infinite;
 }
@@ -50,46 +98,48 @@
 
 .tech-tag:hover {
     transform: scale(1.1);
-    background: linear-gradient(45deg, #9333ea, #7c3aed);
+    background: linear-gradient(45deg, #ffe746, #FEE715);
+    color: #000000;
 }
 
 /*view in gitub button*/
 
-.button-icon {
+.git-button-icon {
     display: flex;
-    border: 3px #fff solid;
+    border: 3px #E0E0E0 solid;
     width: fit-content;
     height: fit-content;
     cursor: pointer;
     overflow: hidden;
 }
 
-.icon {
-    background-color: #fff;
+.git-icon {
+    background-color: #E0E0E0;
     padding: 10px 10px 5px 10px;
 }
 
-.icon svg {
+.git-icon svg {
     width: 25px;
     height: 25px;
 }
 
-.cube {
+.git-cube {
     transition: all 0.4s;
     transform-style: preserve-3d;
     width: 200px;
     height: 20px;
+    position: relative;
 }
 
 .button-icon:hover {
     /*border-color: #9333ea;*/
 }
 
-.button-icon:hover .cube {
+.git-button-icon:hover .git-cube {
     transform: rotateX(90deg);
 }
 
-.side {
+.git-side {
     position: absolute;
     height: 47px;
     width: 200px;
@@ -102,15 +152,14 @@
     font-weight: bold;
 }
 
-.top {
-    /*background: #9333ea;*/
-    color: #fff;
+.git-top {
+    color: #E0E0E0;
     transform: rotateX(-90deg) translate3d(0, 13.5px, 2em);
 }
 
-.front {
+.git-front {
     background: #222229;
-    color: #fff;
+    color: #E0E0E0;
     transform: translate3d(0, 0, 1em);
     margin-bottom: 3px;
 }
