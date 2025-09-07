@@ -1,4 +1,4 @@
-
+// project grid
     const projects = [
     {
         title:"Movie Streaming website",
@@ -10,7 +10,7 @@
     {
         title:"To Do List",
         description: "A website that will help you with your day to day work",
-        demolink: "https://github.com/pamal29/To-Do-List",
+        demolink: "https://pamal29.github.io/To-Do-List/",
         githublink:"https://github.com/pamal29/To-Do-List",
         image:"assets/img/to-do-list.jpeg",
     },
@@ -65,4 +65,32 @@
 
     container.appendChild(card);
 });
+
+// social links
+const socialIcons = document.getElementsByClassName("social-icons");
+
+socialIcons.forEach(socialIcon => {
+    icon.addEventListener("click", (e) => {
+        const link = icon.getAttribute('data-link');
+        window.open(link, "_blank");
+    });
+});
+
+// mobile toggle
+const menuBtn = document.getElementById('menuBtn');
+const mobileMenu = document.getElementById('mobileMenu');
+
+// Toggle menu on hamburger click
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('-translate-x-full');
+});
+
+// Close menu when clicking a link
+document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full');
+    });
+});
+
+
 

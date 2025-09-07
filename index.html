@@ -5,9 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Pamal Pahasara Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/myProjects.css" rel="stylesheet">
+
 
   <link
           rel="stylesheet"
@@ -49,31 +52,38 @@
 <!-- Sidebar / Navbar -->
 <aside class="w-72 bg-gray-900 flex flex-col items-center py-8 space-y-6 fixed inset-y-0 left-0 shadow-lg z-30 hidden md:flex">
   <!-- Profile -->
-  <img src="/assets/img/pro-pic.jpg" alt="Profile"
-       class="rounded-full border-4 border-gray-700 w-28 h-28 object-cover transition-transform duration-500 hover:scale-110" />
-  <h1 class="text-xl font-bold text-white">Pamal Pahasara</h1>
+  <div class="scroll-animate-scale delay-1 animate">
+      <img src="assets/img/profile.png" alt="Profile"
+           class="rounded-full border-4 border-gray-700 w-28 h-28 object-cover transition-transform duration-500 hover:scale-110" />
+  </div>
 
+  <h1 class="text-xl font-bold text-white">Pamal Pahasara</h1>
 
 
 
   <!-- Navigation -->
   <nav class="mt-10 w-full px-6 space-y-6 flex flex-col">
-      <a href="#home" class="batbutton">
+      <a href="#home" class="navbutton">
           <i class="fa-solid fa-house"></i><span>Home</span>
       </a>
-      <a href="#about" class="batbutton">
+      <a href="#about" class="navbutton">
           <i class="fa-solid fa-user"></i><span>About</span>
       </a>
-      <a href="#projects" class="batbutton">
+      <a href="#projects" class="navbutton">
           <i class="fa-solid fa-image"></i><span>Projects</span>
       </a>
-      <a href="#contact" class="batbutton">
+      <a href="#contact" class="navbutton">
           <i class="fa-solid fa-image"></i><span>Contact</span>
       </a>
-<!--    <button class="flex items-center space-x-3 text-gray-300 hover:text-white transition-colors">-->
-<!--      <i class="fa-solid fa-envelope"></i><span>Contact</span>-->
-<!--    </button>-->
+
+      <i class="fa-brands fa-facebook fa-bounce social-icon" data-link="https://facebook.com/yourprofile" style="color: #2a70ea;"></i>
+      <i class="fa-brands fa-github fa-bounce social-icon" data-link="https://github.com/pamal29" style="color: #ffffff;"></i>
+      <i class="fa-brands fa-linkedin fa-bounce social-icon" data-link="https://linkedin.com/yourprofile" style="color: #2372fb;"></i>
+      <i class="fa-brands fa-instagram fa-bounce social-icon" data-link="https://instagram.com/yourprofile" style="color: #ff3d8b;"></i>
+      <i class="fa-brands fa-whatsapp fa-bounce social-icon" data-link="https://wa.me/yourprofile" style="color: #22fa1e;"></i>
+
   </nav>
+
 
 </aside>
 
@@ -81,9 +91,32 @@
 <header class="md:hidden fixed top-0 left-0 w-full bg-gray-900 flex justify-between items-center px-6 py-4 z-40">
   <h1 class="text-lg font-bold text-white">Pamal Pahasara</h1>
   <button id="menuBtn" class="text-white text-2xl">
-    <i class="fa-solid fa-bars"></i>
+      <svg width="50px" height="50px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
+
+          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+
+          <g id="SVGRepo_iconCarrier"> <title>Menu</title> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Menu"> <rect id="Rectangle" fill-rule="nonzero" x="0" y="0" width="2" height="2"> </rect> <line x1="5" y1="7" x2="19" y2="7" id="Path" stroke="#ffffff" stroke-width="2" stroke-linecap="round"> </line> <line x1="5" y1="17" x2="19" y2="17" id="Path" stroke="#ffffff" stroke-width="2" stroke-linecap="round"> </line> <line x1="5" y1="12" x2="19" y2="12" id="Path" stroke="#ffffff" stroke-width="2" stroke-linecap="round"> </line> </g> </g> </g>
+
+      </svg>
   </button>
+
+    <div id="mobileMenu" class="md:hidden fixed top-0 left-0 w-full h-full bg-gray-900 flex flex-col items-center justify-center space-y-6 transform -translate-x-full transition-transform duration-300 z-50">
+        <a href="#home" class="text-white text-2xl">Home</a>
+        <a href="#about" class="text-white text-2xl">About</a>
+        <a href="#projects" class="text-white text-2xl">Projects</a>
+        <a href="#contact" class="text-white text-2xl">Contact</a>
+        <div class="flex space-x-4 mt-6">
+            <i class="fa-brands fa-facebook fa-bounce text-white social-icon"></i>
+            <i class="fa-brands fa-github fa-bounce text-white social-icon"></i>
+            <i class="fa-brands fa-linkedin fa-bounce text-white social-icon"></i>
+            <i class="fa-brands fa-instagram fa-bounce text-white social-icon"></i>
+            <i class="fa-brands fa-whatsapp fa-bounce text-white social-icon"></i>
+        </div>
+    </div>
 </header>
+
 
 
 <!-- Main content -->
@@ -92,7 +125,7 @@
   <!-- Home Section -->
   <section id="home" class="bg-center bg-cover min-h-screen flex items-center px-6 sm:px-12 md:px-20 transition-opacity duration-700">
     <div class="max-w-3xl flex-grow">
-        <h1 class="flex text-4xl sm:text-5xl font-extrabold text-white mb-3 mx-8">Pamal Pahasara</h1>
+        <h1 class="flex text-4xl sm:text-5xl font-extrabold text-briyellow mb-3 mx-8 float">Pamal Pahasara</h1>
 
         <div class="Hcard flex mx-5">
             <div class="Hloader">
@@ -107,7 +140,7 @@
     </div>
 
     <div>
-        <img src="/assets/img/profile.png" alt="Profile"
+        <img src="assets/img/profile.png" alt="Profile"
              class="rounded-full border-4 border-gray-700 w-80 h-80 object-cover transition-transform duration-500 hover:scale-110">
     </div>
   </section>
@@ -115,7 +148,7 @@
   <!-- About Section -->
   <section id="about" class="flex flex-col md:flex-row px-6 sm:px-12 md:px-20 py-12 gap-12 transition-opacity duration-700">
     <div class="max-w-2xl text-gray-300">
-      <h2 class="text-2xl font-bold mb-6 text-briyellow animate-slideInLeft [animation-delay:0.2s]">UI/UX Designer & Web Developer.</h2>
+      <h2 class="text-2xl font-bold mb-6 text-briyellow">UI/UX Designer & Web Developer.</h2>
       <div class="flex flex-col sm:flex-row gap-12 mb-8">
         <ul class="space-y-5 border-b sm:border-b-0 sm:border-r border-gray-700 pb-4 sm:pb-0 sm:pr-8">
           <li><strong>Birthday:</strong> 2003 March 29</li>
@@ -145,7 +178,7 @@
             </p>
         </div>
 
-        <div id="projectsGrid" class="grid md:grid-cols-2 lg:grid:cols-3 gap-8 auto-rows-fr"></div>
+        <div id="projectsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 
         <!-- GitHub Button -->
 
