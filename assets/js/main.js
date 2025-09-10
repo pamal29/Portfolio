@@ -66,15 +66,6 @@
     container.appendChild(card);
 });
 
-// social links
-const socialIcons = document.getElementsByClassName("social-icons");
-
-socialIcons.forEach(socialIcon => {
-    icon.addEventListener("click", (e) => {
-        const link = icon.getAttribute('data-link');
-        window.open(link, "_blank");
-    });
-});
 
 // mobile toggle
 const menuBtn = document.getElementById('menuBtn');
