@@ -157,45 +157,38 @@ ul {
 
 /*navbutton*/
 
-/* From Uiverse.io by alexroumi */
-.navbutton {
-    padding: 15px 25px;
-    border: unset;
-    border-radius: 15px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    color: #212121;
-    z-index: 1;
-    background: gray;
+.navbutton{
+    display: inline-block;
+    font-size: 19px;
+    color: #e1e1e1;
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
     position: relative;
-    font-weight: 1000;
-    font-size: 17px;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms;
-    overflow: hidden;
+    justify-content: center;
+    justify-items: center;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    margin-top: 30px;
+    height: 50px;
 }
 
-.navbutton::before {
+.navbutton::after {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 0;
-    border-radius: 15px;
-    background-color: #212121;
-    z-index: -1;
-    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
-    transition: all 250ms
+    bottom: 18px;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #FEE715;
+    transition: width 0.4s ease, left 0.4s ease;
 }
 
-.navbutton:hover {
-    color: #FEE715;
-}
-
-.navbutton:hover::before {
+.navbutton:hover::after {
     width: 100%;
+    left: 0;
 }
