@@ -17,9 +17,16 @@
     {
         title:"Snake Game",
         description:"Simple snake game built with Java.",
-        demolink:"https://pamal29.github.io/snakeGame/",  // publish on GitHub Pages first!
+        demolink:"https://pamal29.github.io/snakeGame/",
         githublink:"https://github.com/pamal29/snakeGame",
         image:"assets/img/snake-game.png",
+    },
+    {
+        title:"Movie Recommendation System",
+        description:"A system that will recommend a movie based on the movie that you entered",
+        demolink:"https://github.com/pamal29/Movie-Recommendations",
+        githublink:"https://github.com/pamal29/Movie-Recommendations",
+        image:"assets/img/movie recommendation.png",
     }
     ];
 
