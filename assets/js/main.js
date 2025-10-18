@@ -38,10 +38,10 @@
 
     card.innerHTML = `
              <div class="transform transition duration-500 hover:scale-110 animate-fadeInUp flex flex-col h-full">
-                    <div class="bg-gray-900 rounded-xl overflow-hidden h-full hover:bg-gray-800 transition-all duration-300 flex flex-col shadow-lg">
+                    <div class="bg-lightblack rounded-xl overflow-hidden h-full hover:bg-gray-800 transition-all duration-300 flex flex-col shadow-lg">
         
                         <!-- Image -->
-                        <div class="h-48 bg-gradient-to-br from-purple-900 to-gray-800 relative">
+                        <div class="h-48 bg-gradient-to-br from-lightblack to-morelight relative">
                             <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
                                <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover">
                             </div>
