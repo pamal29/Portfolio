@@ -8,13 +8,6 @@
         image:"assets/img/movie-stream.jpeg",
     },
     {
-        title:"To Do List",
-        description: "A website that will help you with your day to day work",
-        demolink: "https://pamal29.github.io/To-Do-List/",
-        githublink:"https://github.com/pamal29/To-Do-List",
-        image:"assets/img/to-do-list.jpeg",
-    },
-    {
         title:"Snake Game",
         description:"Simple snake game built with Java.",
         demolink:"https://pamal29.github.io/snakeGame/",
@@ -38,7 +31,11 @@
 
     card.innerHTML = `
              <div class="transform transition duration-500 hover:scale-110 animate-fadeInUp flex flex-col h-full">
-                    <div class="bg-lightblack rounded-xl overflow-hidden h-full hover:bg-gray-800 transition-all duration-300 flex flex-col shadow-lg">
+                    <div class="bg-gradient-to-br from-[#0d0d0d] to-[#212121] rounded-xl overflow-hidden h-full flex flex-col shadow-lg 
+                                transition-all duration-700 ease-out hover:scale-105 hover:shadow-[0_0_25px_rgba(33,33,33,0.3)] 
+                                hover:from-[#0d0d0d] hover:to-[#2a2a2a]">
+
+
         
                         <!-- Image -->
                         <div class="h-48 bg-gradient-to-br from-lightblack to-morelight relative">
@@ -63,7 +60,7 @@
                                         onclick="window.open('${project.githublink}', '_blank')">
                                     GitHub
                                 </button>
-                            </div>
+                            </div>    
                         </div>
                     </div>
              </div>

@@ -51,10 +51,6 @@
     50% { transform: translateY(-10px); }
 }
 
-@keyframes pulse-glow {
-    0%, 100% { box-shadow: 0 0 20px rgba(147, 51, 234, 0.3); }
-    50% { box-shadow: 0 0 30px rgba(147, 51, 234, 0.6); }
-}
 
 @keyframes slide-up {
     from {
@@ -68,7 +64,6 @@
 }
 
 .float-animation { animation: float 3s ease-in-out infinite; }
-.pulse-glow { animation: pulse-glow 2s ease-in-out infinite; }
 .slide-up { animation: slide-up 0.6s ease-out forwards; }
 
 .project-card {
