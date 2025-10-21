@@ -73,14 +73,15 @@
 
 const certificates = [
     {
-        title:"Movie Streaming website",
-        description:"A responsive movie streaming website built with HTML & CSS. This project is designed to showcase my front-end development skills, including layout design, responsive UI, and modern styling practices.",
-        demolink:"https://pamal29.github.io/Movie-Stream-Website/",
-        githublink:"https://github.com/pamal29/Movie-Stream-Website",
-        image:"assets/img/movie-stream.jpeg",
-    },
+        title:"Supervised Machine Learning",
+        description:"Certificate for completed the Supervised Machine Learning: Regression and Classification Course  by DeepLearning.AI and Stanford Online on Coursera",
+        demolink:"https://www.coursera.org/account/accomplishments/verify/J7YA4OAMV0BV",
+        image:"assets/img/certificate1.png",
+    }
 
-const container2 = document.getElementById("certificationGrid");
+    ];
+
+const container2 = document.getElementById("certificateGrid");
 
 certificates.forEach(certificate => {
     const card = document.createElement("div");
@@ -111,12 +112,9 @@ certificates.forEach(certificate => {
                             <div class="flex gap-3 mt-auto">
                                 <button class="flex-1 text-modgrey px-4 py-2 rounded-lg transition-all duration-300 hover:bg-briyellow hover:text-black hover:scale-105 hover:shadow-lg"
                                        onclick="window.open('${certificate.demolink}', '_blank')">
-                                    Live Demo
+                                    Verify At
                                 </button>
-                                <button id="gitbtn" class="flex-1 text-modgrey px-4 py-2 rounded-lg transition-all duration-300 hover:bg-briyellow hover:text-black hover:scale-105 hover:shadow-lg"
-                                        onclick="window.open('${certificate.githublink}', '_blank')">
-                                    GitHub
-                                </button>
+                            
                             </div>    
                         </div>
                     </div>
